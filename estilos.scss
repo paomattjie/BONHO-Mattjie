@@ -277,7 +277,7 @@ footer{
 
 // ESTILOS SECCION 3
 
-section{
+.tituloPresentacion{
     /* titulo "¿Cómo comezó todo?" */
     .h1Titulo{
     padding: 40px;
@@ -295,31 +295,17 @@ section{
 
 }
 
-// mapa de parrafos
-$parrafos:(
-    parrafo1: 30px,
-    parrafo2: 31px,
-    parrafo3: 32px,
-)
-
-@each $parrafo, $size in $parrafos {
-    .parrafos--#{$parrafo}{
-        font-size: $size;
-    }
-    
-}
-
 // estilos de parrafos de presentación y firma
-section{
-    // .parrafos{
-    //     font-size: 30px;
-    //     font-family: 'Alata', sans-serif;
-    //     padding: 20px;
-    //     margin-left: 50px;
-    //     margin-right: 50px;
-    //     text-align: justify;
-    //     color:blanchedalmond
-    // }
+.pPresentacion{
+    .parrafos{
+        font-size: 30px;
+        font-family: 'Alata', sans-serif;
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: justify;
+        color:blanchedalmond
+    }
     
     /* estilos firma */
     .firma{
@@ -362,6 +348,19 @@ section{
             font-family: 'Alata', sans-serif;
             font-size: 20px;
         }
+    }
+}
+
+// mapa de parrafos
+$parrafos:(
+    parrafo1: 30px,
+    parrafo2: 31px,
+    parrafo3: 32px,
+)
+
+@each $parrafo, $size in $parrafos {
+    .parrafos--#{$parrafo}{
+        font-size: $size;
     }
 }
 

@@ -46,6 +46,7 @@ header{
     background-color:black;
     height: 100%;
     width: 100%;
+    
 }
 
 .bodySeccion1{
@@ -76,7 +77,7 @@ header{
 footer{
     height: 100%;
     width: 100%;
-    margin-top: 20px ;
+    margin-top: 20px;
     background-color: rgb(3, 19, 31);
     color: beige;
     display: flex;
@@ -110,13 +111,13 @@ footer{
 
     // estilos imagenes del Carousel
     .corazones{
-        height: 500px;
+        height: 600px;
     }
     .mango{
-        height: 500px;
+        height: 600px;
     }
     .ramasLeche{
-        height: 500px;
+        height: 600px;
     }
 
     // primer párrafo
@@ -124,24 +125,24 @@ footer{
         color: $blanco;
         font-family: 'Alata', sans-serif;
         font-size: 48px;
-        margin: 70px;
+        margin: 80px;
         text-align: center;
     }
 }
 
 .sectionParrafo2{
-    .parrafo2{
+        .parrafo2{
         color: $blanco;
         font-family: 'Alata', sans-serif;
-        font-size: 38px;
-        margin: 70px;
-        text-align: center;}
-    
+        font-size: 35px;
+        margin: 50px;
+        text-align: center;
+    }
 }
 
 .asideIndex{
     .parrafo3{
-        color: white;
+    color: white;
     font-family: 'Dancing Script', cursive;
     font-size: 48px;
     margin: 70px;
@@ -238,6 +239,7 @@ footer{
     padding-bottom: 8px;
     margin: 5px;
     text-decoration: underline;
+    align-items: center;
     }
 
     /* estilos subtitulo entre paréntesis */
@@ -297,6 +299,8 @@ footer{
 
 // estilos de parrafos de presentación y firma
 .pPresentacion{
+    display: flex;
+    flex-direction: column;
     .parrafos{
         font-size: 30px;
         font-family: 'Alata', sans-serif;
@@ -304,7 +308,8 @@ footer{
         margin-left: 50px;
         margin-right: 50px;
         text-align: justify;
-        color:blanchedalmond
+        color:blanchedalmond;
+        flex-direction: column;
     }
     
     /* estilos firma */
@@ -343,6 +348,9 @@ footer{
 /* estilos texto "Email" y "Escribe aqui el motivo de tu consulta" */
 .container{
     form{
+        .botonEnviar{
+            background-color: $rojoPrincipal !important;
+        }
         .form-group{
             color: blanchedalmond;
             font-family: 'Alata', sans-serif;
@@ -357,12 +365,5 @@ $parrafos:(
     parrafo2: 31px,
     parrafo3: 32px,
 )
-
-@each $parrafo, $size in $parrafos {
-    .parrafos--#{$parrafo}{
-        font-size: $size;
-    }
-}
-
 
 
